@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
+@property (strong, nonatomic) IBOutlet UILabel *lblBreed;
+@property (strong,nonatomic) NSMutableArray *myPets;
+@property (nonatomic) int currentIndex;
 
+- (IBAction)btnNewDog:(id)sender;
 @end
 
